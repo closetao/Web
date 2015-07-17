@@ -190,6 +190,9 @@ body {
     margin: 0 0.8333333333333%;
   }
 }
+#main {
+  float: right;
+}
 .article-date,
 .article-category-link,
 .archive-year,
@@ -436,7 +439,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   letter-spacing: 2px;
-  background: #e32d40;
+  background: #21282e;
   padding: 5px 10px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
