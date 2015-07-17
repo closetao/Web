@@ -4,17 +4,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>行者无疆</title>
+  <title>为Hexo添加微搜索 | 行者无疆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="行者无疆">
-<meta property="og:url" content="http://closetao.github.io/Web/index.html">
+  <meta name="description" content="原文链接为Hexo添加微搜索
+微搜索是什么微搜索（官网）是一个非常快速的站内搜索引擎，全文搜索，实时索引，即输即搜，自动补全，帮助你轻松实现全文搜索功能。而整个过程只需要简单的三步：创建引擎，添加站点地址，复制代码到 html。关键它还免费（哈哈，就看中这点！），免费帐号可创建1个引擎，添加两个域名。
+添加微搜索到博客添加微搜索代码照着官网的帮助视频做，先创建个引擎，然后在“爬虫”那把自己的域名添">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为Hexo添加微搜索">
+<meta property="og:url" content="http://closetao.github.io/Web/2015/07/17/Hexo-AddSearch/index.html">
 <meta property="og:site_name" content="行者无疆">
-<meta property="og:description">
+<meta property="og:description" content="原文链接为Hexo添加微搜索
+微搜索是什么微搜索（官网）是一个非常快速的站内搜索引擎，全文搜索，实时索引，即输即搜，自动补全，帮助你轻松实现全文搜索功能。而整个过程只需要简单的三步：创建引擎，添加站点地址，复制代码到 html。关键它还免费（哈哈，就看中这点！），免费帐号可创建1个引擎，添加两个域名。
+添加微搜索到博客添加微搜索代码照着官网的帮助视频做，先创建个引擎，然后在“爬虫”那把自己的域名添">
+<meta property="og:updated_time" content="2015-07-17T13:01:02.509Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="行者无疆">
-<meta name="twitter:description">
+<meta name="twitter:title" content="为Hexo添加微搜索">
+<meta name="twitter:description" content="原文链接为Hexo添加微搜索
+微搜索是什么微搜索（官网）是一个非常快速的站内搜索引擎，全文搜索，实时索引，即输即搜，自动补全，帮助你轻松实现全文搜索功能。而整个过程只需要简单的三步：创建引擎，添加站点地址，复制代码到 html。关键它还免费（哈哈，就看中这点！），免费帐号可创建1个引擎，添加两个域名。
+添加微搜索到博客添加微搜索代码照着官网的帮助视频做，先创建个引擎，然后在“爬虫”那把自己的域名添">
   
     <link rel="alternative" href="/Web/atom.xml" title="行者无疆" type="application/atom+xml">
   
@@ -71,9 +78,7 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-    <article id="post-Hexo-AddSearch" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-Hexo-AddSearch" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/Web/2015/07/17/Hexo-AddSearch/" class="article-date">
   <time datetime="2015-07-17T12:46:24.000Z" itemprop="datePublished">2015-07-17</time>
@@ -90,8 +95,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/Web/2015/07/17/Hexo-AddSearch/">为Hexo添加微搜索</a>
+    <h1 class="article-title" itemprop="name">
+      为Hexo添加微搜索
     </h1>
   
 
@@ -100,6 +105,11 @@
     <div class="article-entry" itemprop="articleBody">
       
       <!-- Table of Contents -->
+        
+          <div id="toc" class="toc-article">
+            <strong class="toc-title">目 录</strong>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#微搜索是什么"><span class="toc-number">1.</span> <span class="toc-text">微搜索是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加微搜索到博客"><span class="toc-number">2.</span> <span class="toc-text">添加微搜索到博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#添加微搜索代码"><span class="toc-number">2.1.</span> <span class="toc-text">添加微搜索代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改搜索框"><span class="toc-number">2.2.</span> <span class="toc-text">修改搜索框</span></a></li></ol></li></ol>
+          </div>
         
         <p><strong>原文链接</strong><a href="http://starsky.gitcafe.io/2015/05/11/%E4%B8%BAHexo%E6%B7%BB%E5%8A%A0%E5%BE%AE%E6%90%9C%E7%B4%A2/" target="_blank" rel="external">为Hexo添加微搜索</a></p>
 <h2 id="微搜索是什么">微搜索是什么</h2><p>微搜索（<a href="http://tinysou.com/" target="_blank" rel="external">官网</a>）是一个非常快速的站内搜索引擎，全文搜索，实时索引，即输即搜，自动补全，帮助你轻松实现全文搜索功能。<br>而整个过程只需要简单的三步：创建引擎，添加站点地址，复制代码到 html。<br>关键它还免费（哈哈，就看中这点！），免费帐号可创建1个引擎，添加两个域名。</p>
@@ -124,163 +134,20 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-Hexo-EnableTableofContents" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Web/2015/07/17/Hexo-EnableTableofContents/" class="article-date">
-  <time datetime="2015-07-17T12:02:24.000Z" itemprop="datePublished">2015-07-17</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Web/categories/Hexo/">Hexo</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/Web/2015/07/17/Hexo-EnableTableofContents/">为Hexo博客添加目录</a>
-    </h1>
+    <a href="/Web/2015/07/17/Hexo-EnableTableofContents/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">为Hexo博客添加目录</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>原文链接</strong><a href="http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/">为Hexo博客添加目录</a><br>Hexo博客系统的核心支持生成目录（Table of Contents），但其默认的主题Landscape并不支持目录的显示。我们只需对Landscape的主题文件稍作修改并添加一点目录的CSS就可以在文章前面显示友好的目录了。</p>
-<h2 id="修改Landscape主题的ejs文件">修改Landscape主题的ejs文件</h2><p>我们首先要编辑文章显示页面的模板，也就是<code>themes/landscape/layout/_partial/article.ejs</code>文件。为了将目录生成在正文之前，我们首先在这个文件中找到<code>&lt;%- post.content %&gt;</code>，并在<strong>这一行之前</strong>加入如下代码：</p>
-        
-          <p class="article-more-link">
-            <a href="/Web/2015/07/17/Hexo-EnableTableofContents/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://closetao.github.io/Web/2015/07/17/Hexo-EnableTableofContents/" data-id="cic7mwm9q000ddo9r61xxw9da" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
   
 </article>
 
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Web/2015/07/16/hello-world/" class="article-date">
-  <time datetime="2015-07-16T13:57:03.294Z" itemprop="datePublished">2015-07-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Web/2015/07/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      <!-- Table of Contents -->
-        
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://closetao.github.io/Web/2015/07/16/hello-world/" data-id="cic7mwm9g000cdo9rvy67x7s3" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-新的开始" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Web/2014/05/07/新的开始/" class="article-date">
-  <time datetime="2014-05-07T10:44:12.000Z" itemprop="datePublished">2014-05-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/Web/categories/日志/">日志</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Web/2014/05/07/新的开始/">新的开始</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      <!-- Table of Contents -->
-        
-        <p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-<p>通过下面的命令，就可以创建新文章<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\workspace\javascript\nodejs-hexo&#62;hexo new &#26032;&#30340;&#24320;&#22987;&#10;[info] File created at D:\workspace\javascript\nodejs-hexo\source\_posts\&#26032;&#30340;&#24320;&#22987;.md</span><br></pre></td></tr></table></figure></p>
-<p>感觉非常好。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://closetao.github.io/Web/2014/05/07/新的开始/" data-id="cic7mwm960003do9ral5h6egz" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Web/tags/开始/">开始</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Web/tags/我/">我</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Web/tags/日记/">日记</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-  
 </section>
       
       <aside id="sidebar">
