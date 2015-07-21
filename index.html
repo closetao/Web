@@ -9,7 +9,7 @@
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="行者无疆">
-<meta property="og:url" content="http://closetao.github.io/index.html">
+<meta property="og:url" content="http://wleyuan.me/index.html">
 <meta property="og:site_name" content="行者无疆">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -111,31 +111,22 @@ _ts(option);
     
     <div class="article-entry" itemprop="articleBody">
       
-      <!-- Table of Contents -->
-        
-        <p><strong>【参考链接】</strong> <a href="http://starsky.gitcafe.io/2015/05/05/Hexo%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E3%80%81%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91/" target="_blank" rel="external">Hexo添加图片、音乐和视频 </a></p>
+        <p><strong>【参考链接】</strong> <a href="http://starsky.gitcafe.io/2015/05/05/Hexo%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E3%80%81%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91/">Hexo添加图片、音乐和视频 </a></p>
 <h2 id="插入图片">插入图片</h2><h3 id="添加外部链接图片">添加外部链接图片</h3><p>插入图片代码：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="link_label">“图片描述”（可以不写）</span>](<span class="link_url">“图片地址”</span>)</span><br></pre></td></tr></table></figure></p>
-<p>图片存储的话一般会使用图床，很多博客推荐的是<a href="www.qiniu.com/">七牛存储</a>,参考文章中有给出了<a href="https://weibotuchuang.sinaapp.com/" target="_blank" rel="external">微博图床</a>。我这里再推荐个<a href="http://tietuku.com/" target="_blank" rel="external">贴图库</a>这个网站有个好处，不用注册也可以上传图片获取外链。<br>下面是个例子，代码如下：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="attr_selector">[颈椎病治疗秘籍]</span>(<span class="rule"><span class="attribute">http</span>:<span class="value">//i3.tietuku.com/<span class="number">87</span>f77fa8e36571ba.png)</span></span></span><br></pre></td></tr></table></figure></p>
-<p>效果如下：<br><img src="http://i3.tietuku.com/87f77fa8e36571ba.png" alt="颈椎病治疗秘籍"></p>
-<h2 id="添加本地图片">添加本地图片</h2><p>在<code>\hexo\source</code>目录下新建文件夹，命名为<code>images</code>或者其他你喜欢的名字，然后编辑你的md博文，插入下面的代码样式：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="link_label">“图片描述”（可以不写）</span>](<span class="link_url">/images/你的图片名字.JPG</span>)</span><br></pre></td></tr></table></figure></p>
-<p>例如我在D:\hexo\source\images放入了一个smile01.gif图片，然后写下：<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="attr_selector">[]</span>(/images/smile01.gif)</span><br></pre></td></tr></table></figure></p>
-<p>重新生成，上传后就可以看到效果了。（偷懒了，效果不做了。）</p>
-<h2 id="插入音乐">插入音乐</h2><p>比如网易云音乐，找到喜欢的歌曲，点击分享按钮，把里面的代码复制下来，直接粘贴到博文中即可。<br>比如插入以下代码<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe <span class="variable">frameborder=</span><span class="string">"no"</span> <span class="variable">border=</span><span class="string">"0"</span> <span class="variable">marginwidth=</span><span class="string">"0"</span> <span class="variable">marginheight=</span><span class="string">"0"</span> <span class="variable">width=</span><span class="number">330</span> <span class="variable">height=</span><span class="number">86</span> </span><br><span class="line">	<span class="variable">src=</span><span class="string">"http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66"</span>&gt;</span><br><span class="line">&lt;/iframe&gt;</span><br></pre></td></tr></table></figure></p>
-<p>如果想要居中显示可以在外侧加入<strong><center></center></strong>标签,代码如下：<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;center&gt;</span><br><span class="line">&lt;iframe <span class="variable">frameborder=</span><span class="string">"no"</span> <span class="variable">border=</span><span class="string">"0"</span> <span class="variable">marginwidth=</span><span class="string">"0"</span> <span class="variable">marginheight=</span><span class="string">"0"</span> <span class="variable">width=</span><span class="number">330</span> <span class="variable">height=</span><span class="number">86</span> </span><br><span class="line">	<span class="variable">src=</span><span class="string">"http://music.163.com/outchain/player?type=2&amp;id=25706282&amp;auto=0&amp;height=66"</span>&gt;</span><br><span class="line">&lt;/iframe&gt;	</span><br><span class="line">&lt;/center&gt;</span><br></pre></td></tr></table></figure></p>
-<center><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=25706282&auto=0&height=66"><br></iframe><br></center>
-
-<h2 id="插入视频">插入视频</h2><p>视频也和音乐类似，先输入视频标题，回车换一行插入代码即可。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Idina Menze和Caleb Hyles激情对唱Let It Go：</span><br><span class="line"><span class="tag">&lt;<span class="title">iframe</span> </span><br><span class="line">	<span class="attribute">height</span>=<span class="value">498</span> <span class="attribute">width</span>=<span class="value">510</span> </span><br><span class="line">	<span class="attribute">src</span>=<span class="value">"http://player.youku.com/embed/XNjcyMDU4Njg0"</span> </span><br><span class="line">	<span class="attribute">frameborder</span>=<span class="value">0</span> <span class="attribute">allowfullscreen</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>效果如下：<br>Idina Menze和Caleb Hyles激情对唱Let It Go：</p>
-<iframe height="498" width="510" src="http://player.youku.com/embed/XNjcyMDU4Njg0" frameborder="0" allowfullscreen><br></iframe>
+        
+          <p class="article-more-link">
+            <a href="/2015/07/18/Hexo-AddSoundPicMovie/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://closetao.github.io/2015/07/18/Hexo-AddSoundPicMovie/" data-id="cicajsxib000f489rf2cqzt04" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://wleyuan.me/2015/07/18/Hexo-AddSoundPicMovie/" data-id="cicajsxib000f489rf2cqzt04" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
-        <a href="http://closetao.github.io/2015/07/18/Hexo-AddSoundPicMovie/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://wleyuan.me/2015/07/18/Hexo-AddSoundPicMovie/#ds-thread" class="article-comment-link">评论</a>
       
 
       
@@ -183,11 +174,11 @@ _ts(option);
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://closetao.github.io/2015/07/17/Hexo-AddSearch/" data-id="cicajsxgl0000489rnj5jg4kq" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://wleyuan.me/2015/07/17/Hexo-AddSearch/" data-id="cicajsxgl0000489rnj5jg4kq" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
-        <a href="http://closetao.github.io/2015/07/17/Hexo-AddSearch/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://wleyuan.me/2015/07/17/Hexo-AddSearch/#ds-thread" class="article-comment-link">评论</a>
       
 
       
@@ -235,120 +226,14 @@ _ts(option);
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://closetao.github.io/2015/07/17/Hexo-EnableTableofContents/" data-id="cicajsxib000d489rl7b8l5pd" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://wleyuan.me/2015/07/17/Hexo-EnableTableofContents/" data-id="cicajsxib000d489rl7b8l5pd" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
-        <a href="http://closetao.github.io/2015/07/17/Hexo-EnableTableofContents/#ds-thread" class="article-comment-link">评论</a>
+        <a href="http://wleyuan.me/2015/07/17/Hexo-EnableTableofContents/#ds-thread" class="article-comment-link">评论</a>
       
 
       
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/07/16/hello-world/" class="article-date">
-  <time datetime="2015-07-16T13:57:03.294Z" itemprop="datePublished">2015-07-16</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      <!-- Table of Contents -->
-        
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://closetao.github.io/2015/07/16/hello-world/" data-id="cicajsxhw000c489r082zybou" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-        <a href="http://closetao.github.io/2015/07/16/hello-world/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-新的开始" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2014/05/07/新的开始/" class="article-date">
-  <time datetime="2014-05-07T10:44:12.000Z" itemprop="datePublished">2014-05-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/日志/">日志</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/05/07/新的开始/">新的开始</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-      <!-- Table of Contents -->
-        
-        <p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-<p>通过下面的命令，就可以创建新文章<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\workspace\javascript\nodejs-hexo&#62;hexo new &#26032;&#30340;&#24320;&#22987;&#10;[info] File created at D:\workspace\javascript\nodejs-hexo\source\_posts\&#26032;&#30340;&#24320;&#22987;.md</span><br></pre></td></tr></table></figure></p>
-<p>感觉非常好。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-        <a data-url="http://closetao.github.io/2014/05/07/新的开始/" data-id="cicajsxhw0003489rtlkm0a30" class="article-share-link" data-share="baidu">分享到</a>
-      
-
-      
-        <a href="http://closetao.github.io/2014/05/07/新的开始/#ds-thread" class="article-comment-link">评论</a>
-      
-
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开始/">开始</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/我/">我</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日记/">日记</a></li></ul>
-
     </footer>
   </div>
   
@@ -365,7 +250,7 @@ _ts(option);
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/日志/">日志</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -374,7 +259,7 @@ _ts(option);
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/开始/">开始</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/我/">我</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日记/">日记</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"></ul>
     </div>
   </div>
 
@@ -383,7 +268,7 @@ _ts(option);
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/开始/" style="font-size: 10px;">开始</a> <a href="/tags/我/" style="font-size: 10px;">我</a> <a href="/tags/日记/" style="font-size: 10px;">日记</a>
+      
     </div>
   </div>
 
@@ -392,7 +277,7 @@ _ts(option);
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/05/">五月 2014</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -413,14 +298,6 @@ _ts(option);
         
           <li>
             <a href="/2015/07/17/Hexo-EnableTableofContents/">Hexo博客添加目录</a>
-          </li>
-        
-          <li>
-            <a href="/2015/07/16/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2014/05/07/新的开始/">新的开始</a>
           </li>
         
       </ul>
